@@ -1,0 +1,35 @@
+[tool.black]
+line-length = 88
+py36 = true
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.poetry]
+name = "even-more-itertools"
+version = "0.1.0"
+description = ""
+authors = ["David Buckley <buckley.w.david@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "github.com/buckley-w-david/even-more-itertools"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+black = "^18.3-alpha.0"
+mypy = "^0.620.0"
+pre-commit = "^1.10"
