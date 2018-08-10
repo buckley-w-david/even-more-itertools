@@ -1,6 +1,7 @@
 from collections import deque
 
-__version__ = '0.1.0'
+__version__ = "0.1.0"
+
 
 class HistoricalIterator(deque):
     def __init__(self, iterator, maxlen=10):
@@ -16,4 +17,4 @@ class HistoricalIterator(deque):
         return result
 
     def __repr__(self):
-        return f'HistoricalIterator({self._iter}, maxlen={self.maxlen})'
+        return f"HistoricalIterator({self._iter}, maxlen={self.maxlen})"
